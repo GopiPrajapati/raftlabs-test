@@ -30,8 +30,10 @@ export default function HomeScreen() {
   } = useQuery({
     queryKey: ["properties"],
     queryFn: async () => {
-      const res = await GET("properties");
-      return res;
+      // const res = await GET("properties");
+      // return res;
+      const res = await GET("");
+      return res.properties;
     },
   });
 

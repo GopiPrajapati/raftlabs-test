@@ -12,9 +12,20 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.raftlabs.test",
+      "versionCode": 1,
+      "icon": "./assets/react-logo@2x.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAgZwzr4NsGRApGDl6zuxMgqnnthZ3cADA"
+        }
+      },
+      "release": {
+        "buildType": "apk"
       }
     },
     "web": {
@@ -36,6 +47,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7d3a9342-cb05-48c6-bfc2-455ad6d55611"
+      }
     }
   }
 }
